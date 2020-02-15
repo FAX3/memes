@@ -1,0 +1,164 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	background-color: #fcf9ea;
+}
+
+h1 {
+	text-align: center;
+	color: #e25822;
+	background-color: #f1bc31;
+	font-family: 'Big Shoulders Text', cursive;
+}
+
+h2 {
+	text-align: center;
+	color: #e7f3ff;
+	background-color: #7c0a02;
+	font-family: 'Big Shoulders Text', cursive;
+}
+
+.main {
+	max-width: 1000px;
+	margin: auto;
+	background-color: #b22222;
+	border: 1px solid #f45905;
+}
+
+.items {
+	background-color: #e3b04b;
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	/*box-shadow: 0 0 10px 1px grey;*/
+	flex-wrap: wrap;
+}
+
+.item {
+	/*голубые блоки*/
+	max-height: 265px;
+	max-width: 239px;
+	width: calc(25% - 10px);
+	height: calc(95vw / 4 / 16 * 9);
+	background-color: #f45905;
+	margin: 5px;
+	opacity: 0.5;
+
+	background-position: center;
+	background-size: cover;
+}
+
+p {
+	color: blue;
+	padding: 10px 20px;
+	font-weight: bold;/*текст: жирный*/
+	font-size: 28px;
+}
+
+a {
+	width: 176px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	opacity: 0.5;
+	text-decoration: none;
+	color: blue;
+}
+
+/*:hover - срабатывает только при наведении мыши*/
+a.item:hover {
+	box-shadow: 3px 3px 3px 3px grey;
+	transition: transform 0.5s linear;
+	opacity: 1;
+	transform: rotate(720deg) scale(1.5);
+	z-index: 100;
+}
+
+a.item:visited {
+	border-color: #512c62;
+}
+
+.item_img {
+	max-height: 265px;
+	max-width: 490px;
+	width: 100%;
+	height: calc(95vw / 4 / 16 * 9);
+}
+
+.item_description {
+	display: none;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+
+a:hover .item_description {
+	display: block;
+}
+
+@media all and (max-width: 320px) {
+	.item{
+		max-width: initial;
+		max-height: initial;
+		width: 100%;
+		height: calc(95vw / 16 *9);
+	}
+
+
+.item_img {
+	max-width: 100%;
+width: 100%;
+height: calc(95vw / 16 *9);
+	}
+		}
+
+@media all and (max-width: 480px) and (min-width: 321px) {
+	.item{
+		max-width: initial;
+		max-height: 265px;
+		width: calc(50% - 10px);
+		height: calc(95vw / 2 / 16 *9);
+	}
+
+
+	.item_img {
+		max-width: 100%;
+		width: 100%;
+		height: calc(95vw / 2 / 16 *9);
+	}
+}	
+
+@media all and (min-width: 481px) and  (max-width: 768px){
+	.item{
+		max-width: initial;
+		max-height: 265px;
+		width: calc(100% / 3 - 10px);
+		height: calc(95vw / 3 / 16 *9);
+	}
+
+
+.item_img {
+		max-width: 100%;
+		width: 100%;
+		height: calc(95vw / 3 / 16 *9);
+	}
+}
+
+footer {
+	background-color:#202040;
+}
+
+footer a {
+	height:20px;
+	color:white;
+	font-weight: bold;
+}
+
+	
